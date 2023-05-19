@@ -123,23 +123,117 @@
       </div>
     </div>
     <hr />
-    <!-- rental accomodation -->
-    <!--  -->
-    <!-- <div class="fifth">
+    
+    <!-- cards start -->
+    <div class="fifth">
       <div class="f-text-area">
-        <p>Rentals</p>
-        <p>Our Rental Recoomandations</p>
+        <p><span> Rentals</span></p>
+        <p>Our Rental Recomandations</p>
       </div>
       <div class="f-list">
         <ul>
-          <li>Latest</li>
-          <li>popular</li>
-          <li>recent</li>
-          <li>near me</li>
+          <li class="underline" id="1" onclick="underline()">Latest</li>
+          <li class="underline" id="2" onclick="underline()">popular</li>
+          <li class="underline" id="3" onclick="underline()">recent</li>
+          <li class="underline" id="4" onclick="underline()">near me</li>
         </ul>
       </div>
-    </div> -->
-    <!-- footer -->
+  
+      <div class="card-area">
+        <div class="f-card">
+          <div class="f-img-card">
+            <img src="./images/gtk.jpg" alt="">
+          </div>
+          <div class="f-card-text-area">
+            <div class="f-card-texts">
+              <p><span> Two rooms with Free WIFI</span></p>
+              <p>chesopani ,South Sikkim</p>
+              <p>3 days ago</p>
+            </div>
+            <div class="f-card-btn">
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="f-img-card">
+            <img src="./images/gtk.jpg" alt="">
+          </div>
+          <div class="f-card-text-area">
+            <div class="f-card-texts">
+              <p><span> Two rooms with Free WIFI</span></p>
+              <p>chesopani ,South Sikkim</p>
+              <p>3 days ago</p>
+            </div>
+            <div class="f-card-btn">
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="f-img-card">
+            <img src="./images/gtk.jpg" alt="">
+          </div>
+          <div class="f-card-text-area">
+            <div class="f-card-texts">
+              <p><span> Two rooms with Free WIFI</span></p>
+              <p>chesopani ,South Sikkim</p>
+              <p>3 days ago</p>
+            </div>
+            <div class="f-card-btn">
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="f-img-card">
+            <img src="./images/gtk.jpg" alt="">
+          </div>
+          <div class="f-card-text-area">
+            <div class="f-card-texts">
+              <p><span> Two rooms with Free WIFI</span></p>
+              <p>chesopani ,South Sikkim</p>
+              <p>3 days ago</p>
+            </div>
+            <div class="f-card-btn">
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="f-img-card">
+            <img src="./images/gtk.jpg" alt="">
+          </div>
+          <div class="f-card-text-area">
+            <div class="f-card-texts">
+              <p><span> Two rooms with Free WIFI</span></p>
+              <p>chesopani ,South Sikkim</p>
+              <p>3 days ago</p>
+            </div>
+            <div class="f-card-btn">
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="f-img-card">
+            <img src="./images/gtk.jpg" alt="">
+          </div>
+          <div class="f-card-text-area">
+            <div class="f-card-texts">
+              <p><span> Two rooms with Free WIFI</span></p>
+              <p>chesopani ,South Sikkim</p>
+              <p>3 days ago</p>
+            </div>
+            <div class="f-card-btn">
+              <button>view details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cards end -->
+    <!-- footer start -->
     <div class="index-footer">
       <div class="i-footer-img">
         <p>More then 150 rooms on your finger tips !</p>
@@ -208,5 +302,28 @@
       </div>
       
     </div>
+    <!-- footer End -->
+
+    <!-- scripts start -->
+    <script>
+
+      const a1 = document.getElementById("1");
+      const b2 = document.getElementById("2");
+      const c3 = document.getElementById("3");
+      const d4 = document.getElementById("4");
+    
+      a1.addEventListener('click', () => {
+        a1.style.borderBottom = '2px solid #0cc0df';
+      })
+      b2.addEventListener('click', () => {
+        b2.style.borderBottom = '2px solid #0cc0df';
+      })
+      c3.addEventListener('click', () => {
+        c3.style.borderBottom = '2px solid #0cc0df';
+      })
+      d4.addEventListener('click', () => {
+        d4.style.borderBottom = '2px solid #0cc0df';
+      })
+    </script>
   </body>
 </html>

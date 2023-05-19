@@ -362,6 +362,115 @@ hr {
   height: 40rem;
   width: 100%;
 }
+/* cards section */
+.fifth {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-text-area {
+  /* border: 2px solid red; */
+  text-align: center;
+  font-size: 3rem;
+}
+
+.f-text-area span {
+  color: var(--pricol);
+}
+
+.f-list {
+  /* border: 2px solid yellow; */
+  display: flex;
+
+}
+
+.f-list ul {
+  display: flex;
+
+}
+
+.f-list ul li {
+  margin: 0 7rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card-area {
+  /* border: 2px solid green; */
+  /* height: 100vh; */
+  width: 98vw;
+  background-color: #e2e2e2;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.f-card {
+  /* border: 2px solid red; */
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 26rem;
+}
+
+.f-img-card {
+  /* border: 2px solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.f-img-card img {
+  width: 100%;
+  height: 100%;
+  /* mix-blend-mode: color-burn; */
+  /* object-fit: con;
+  aspect-ratio: 3/2; */
+  border-top-right-radius: 5rem;
+}
+
+.f-card-text-area {
+  /* border: 2px solid green; */
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem;
+  text-transform: capitalize;
+}
+
+.f-card-texts {
+  color: grey
+}
+
+.f-card-texts span {
+  color: black;
+  font-size: 1.1rem;
+  margin: 0 0.9rem 0 0;
+}
+
+/* .f-card-btn {} */
+
+.f-card-btn button {
+  background-color: var(--pricol);
+  border: none;
+  outline: none;
+  width: 7rem;
+  height: 2.1546rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: white;
+}
 /* footer  */
 .index-footer {
   background: linear-gradient(90deg, black, grey);
@@ -370,6 +479,7 @@ hr {
   justify-content: center;
   height: 70vh;
   flex-direction: column;
+  margin-top: 25vh;
 }
 .i-footer-img {
   background-image: url(./images/gtk.jpg);
