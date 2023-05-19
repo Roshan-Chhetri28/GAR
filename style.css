@@ -1,6 +1,6 @@
 :root {
   --pricol: #0cc0df;
-  --shadow:rgb(176, 174, 174);
+  --shadow: rgb(176, 174, 174);
 }
 * {
   margin: 0;
@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-nav{
-  height:7rem;
+nav {
+  height: 7rem;
   /* position: sticky;
   top: 0; */
   width: 100%;
@@ -46,7 +46,6 @@ nav{
   position: sticky;
   top: 0;
   z-index: 100;
-
 }
 .seto img {
   height: 10vw;
@@ -170,13 +169,12 @@ nav{
 .dinay {
   height: 38rem;
   width: 49%;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
-.dinay img{
+.dinay img {
   width: 55vw;
   /* height: 38rem; */
   /* margin-top: 5.5rem; */
@@ -202,7 +200,7 @@ nav{
 /* Second image section */
 .sec-left {
   width: 49vw;
-  margin-left:-6rem;
+  margin-left: -6rem;
   /* border: 2px solid black; */
 }
 
@@ -218,7 +216,7 @@ nav{
   align-items: center;
   height: 50rem;
   row-gap: 0;
-  margin-left:3rem ;
+  margin-left: 3rem;
   /* overflow-wrap: break-word; */
 }
 .sec-about {
@@ -236,14 +234,14 @@ nav{
   font-size: 2rem;
   margin: 1.5rem 0;
 }
-hr{
+hr {
   margin-top: none;
 }
 
 /* services */
-.bg-gtk{
+.bg-gtk {
   /* border: 2px solid black; */
-  background: url('./images/gtk.png') no-repeat center ;
+  background: url("./images/gtk.png") no-repeat center;
   background-size: cover;
   height: 100vh;
   /* width:max-content; */
@@ -258,7 +256,7 @@ hr{
 
   /* position: absolute; */
 }
-.serv{
+.serv {
   /* border: 2px solid black; */
   width: 50%;
   display: flex;
@@ -269,35 +267,34 @@ hr{
   position: relative;
   top: -9rem;
 }
-.serv #blue-text{
+.serv #blue-text {
   font-size: 3rem;
   color: var(--pricol);
 }
-.serv #bold-text{
+.serv #bold-text {
   font-size: 4.4rem;
   color: white;
-
 }
-#info{
+#info {
   font-size: 1.2rem;
   color: white;
 }
 
-.cards{
+.cards {
   /* border:2px solid red; */
   width: 90vw;
-  height: 50vh; 
+  height: 50vh;
   z-index: 2;
   margin: auto;
-  display:flex ;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
   top: -15rem;
 }
-.cards .card-ok{
+.cards .card-ok {
   background-color: #e2e2e2;
-  border-top:12px solid var(--pricol);
+  border-top: 12px solid var(--pricol);
   width: 25vw;
   height: 25rem;
   display: flex;
@@ -311,28 +308,26 @@ hr{
   margin: 1rem;
   border-radius: 10%;
 }
-.cards .card-ok img{
+.cards .card-ok img {
   width: 50%;
   mix-blend-mode: color-burn;
   object-fit: contain;
   aspect-ratio: 3/2;
-  margin-top:1rem ;
+  margin-top: 1rem;
   text-align: center;
 }
-.cards .card-ok p{
+.cards .card-ok p {
   margin: 0.5rem;
-  
 }
-.big-text{
+.big-text {
   font-size: 1.4rem;
   /* margin-top: 10rem; */
   /* width: 2rem; */
   text-transform: capitalize;
   font-weight: bold;
 }
-.small-text{
+.small-text {
   width: 14rem;
-  
 }
 
 /* end of services */
@@ -348,14 +343,13 @@ hr{
   color: var(--pricol);
   font-size: 2rem;
 }
-.four-recom{
+.four-recom {
   font-size: 1rem;
-
 }
-.four-list{
+.four-list {
   border-bottom: 3px solid var(--shadow);
 }
-.four-list ul{
+.four-list ul {
   display: grid;
   width: 90vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -366,5 +360,302 @@ hr{
 .four-carsoule {
   background-color: wheat;
   height: 40rem;
-  width:100%;
+  width: 100%;
+}
+/* footer  */
+.index-footer {
+  background: linear-gradient(90deg, black, grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+}
+.i-footer-img {
+  background-image: url(./images/gtk.jpg);
+  height: 40vh;
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  background-color: #68dbef;
+  /* mix-blend-mode: ; */
+  position: relative;
+  top: -10vw;
+
+}
+  /* playstore button start */
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  margin-top: 1.2rem;
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+  align-self: center;
+  width: 30%;
+
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  /* font-weight: 600; */
+}
+/* google playbutton end  */
+.index-last{
+  display: flex;
+  width:80vw;
+  height: 10vh;
+  justify-content: space-around;
+  text-transform: capitalize;
+  align-items: center;
+}
+.index-l-logo{
+  height: max-content;
+}
+.index-l-logo img{
+  width:15vw;  
+}
+
+
+.footer-list{
+  color: white;
+  width: 40vw;
+  font-size: 1.5vw;
+}
+.footer-list ul{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list ul li{
+  list-style: none;
+}
+
+
+
+
+.share {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  margin-top: 60px;
+ justify-content: center;
+ align-items: center;
+  width: 30vw;
+}
+
+.btn1 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn1 .tooltiptext1 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1 .tooltiptext1 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1:hover {
+  background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+  fill: white;
+}
+
+.btn2 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2 .tooltiptext2 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn2 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2 .tooltiptext2 .username {
+  font-size: 0.6em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn2:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2:hover {
+  background-color: #03A9F4;
+}
+
+.btn2:hover .twitter {
+  fill: white;
+}
+
+.btn3 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn3 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3 .tooltiptext3 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3:hover {
+  background-color: black;
+}
+
+.btn3:hover .git {
+  fill: white;
 }
