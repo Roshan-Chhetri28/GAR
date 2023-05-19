@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fgpass.css" />
+    <title>Forgot Password</title>
+  </head>
+  <body>
+    <div class="fg-main">
+      <div class="fg-sec">
+        <div class="fg-blue">
+          <p>forgot</p>
+          <p>Password</p>
+        </div>
+        <div class="fg-form">
+          <p>Enter your OTP</p>
+          <form action="#" method="post">
+            <div class="fg-input">
+              <input type="text" class="otp" id="otpa" />
+              <input type="text" class="otp" id="otpb" />
+              <input type="text" class="otp" id="otpc" />
+              <input type="text" class="otp" id="otpd" />
+            </div>
+            <!-- <div class="fg-btn"> -->
+              <button type="submit" id="fg-btn">Submit</button>
+            <!-- </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      let inputs = document.querySelectorAll("input");
+      let currentInputIndex = 0;
+      let submitButton = document.querySelector('#fg-btn');
+
+      document.addEventListener("keydown", function (event) {
+        if (event.code === "Backspace") {
+          if (currentInputIndex > 0) {
+            currentInputIndex--;
+            inputs[currentInputIndex--].focus();
+          }
+        }
+      });
+
+      inputs.forEach(function (input, index) {
+        input.addEventListener("input", function (event) {
+          let value = event.target.value;
+          if (value >= 0 && value <= 9) {
+            if (index < inputs.length) {
+              currentInputIndex++;
+              inputs[currentInputIndex].focus();
+              event.target.style.borderColor = "grey";
+            }
+          } else {
+            event.target.style.borderColor = "red";
+            currentInputIndex++;
+            inputs[currentInputIndex].focus();
+          }
+
+          let allInputsFilled = true;
+          inputs.forEach(function (input) {
+            if (input.value === "") {
+              allInputsFilled = false;
+            }
+          });
+
+          if (allInputsFilled) {
+            submitButton.disabled = false;
+          } else {
+            submitButton.disabled = true;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

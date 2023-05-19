@@ -22,7 +22,7 @@
     box-shadow: grey 10px 10px 10px;
 }
 .sign-blue{
-    background: linear-gradient(90deg, purple, aqua);
+    background: linear-gradient(60deg, blue, aqua);
     width: 30%;
     height: 35%;
     text-align:justify;

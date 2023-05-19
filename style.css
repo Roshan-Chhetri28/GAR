@@ -77,6 +77,15 @@ nav {
   color: #0cc0df;
   cursor: pointer;
 }
+.seto ul li a{
+  text-decoration: none;
+  color :black;
+}
+.seto ul li a:hover {
+  border-bottom: 2px solid pricol;
+  color: #0cc0df;
+  cursor: pointer;
+}
 .tawko {
   display: flex;
   justify-content: center;
@@ -217,7 +226,6 @@ nav {
   height: 50rem;
   row-gap: 0;
   margin-left: 3rem;
-  /* overflow-wrap: break-word; */
 }
 .sec-about {
   place-self: flex-start;
@@ -384,12 +392,11 @@ hr {
 .f-list {
   /* border: 2px solid yellow; */
   display: flex;
-
 }
 
 .f-list ul {
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 .f-list ul li {
@@ -544,9 +551,6 @@ hr {
   line-height: 1rem;
 }
 
-.text-2 {
-  /* font-weight: 600; */
-}
 /* google playbutton end  */
 .index-last{
   display: flex;

@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fg-main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.fg-blue{
+  background: linear-gradient(60deg, blue, aqua);
+  width: 30%;
+  height: 30%;
+  margin-bottom: 1.5vh  ;
+  text-align:justify;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  font-family:'Lucida Sans Unicode', monospace, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  align-items:center ;
+  border-bottom-right-radius: 72%;
+  border-top-right-radius: 10px;
+  text-transform: capitalize;
+  align-self: flex-start;
+}
+.fg-sec{
+  background-color: whitesmoke;
+  width: 45vw;
+  height: 90vh;
+  border-radius: 10rem;
+  box-shadow: 10px 10px 10px rgb(167, 166, 166);
+}
+.fg-form{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vh;
+}
+.fg-form p{
+  font-size: 1.7rem;
+  font-family: monospace;
+}
+.fg-form form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+}
+.fg-form form input{
+  width:4vw;
+  height:4vw;
+  text-align: center;
+  font-size: 2rem;
+}
+#fg-btn{
+  display: block;
+  align-self: center;
+  width: 14vw;
+  height: 7vh;
+  background-color: #0ccdf0;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 20px;
+}
