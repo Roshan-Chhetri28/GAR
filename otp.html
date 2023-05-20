@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fgpass.css" />
+    <link rel="stylesheet" href="otp.css" />
     <title>OTP</title>
   </head>
   <body>
@@ -15,65 +15,67 @@
         </div>
         <div class="fg-form">
           <p>Enter your OTP</p>
-          <form action="index.html" method="post">
+          <form action="./confirmpass.html">
             <div class="fg-input">
               <input type="text" class="otp" id="otpa" />
               <input type="text" class="otp" id="otpb" />
               <input type="text" class="otp" id="otpc" />
               <input type="text" class="otp" id="otpd" />
             </div>
-            <!-- <div class="fg-btn"> -->
             <button type="submit" id="fg-btn">Submit</button>
-            <!-- </div> -->
           </form>
         </div>
       </div>
     </div>
     <script>
- let inputs = document.querySelectorAll("input");
-let submitButton = document.querySelector('button[type="submit"]');
-submitButton.disabled = true;
-
-inputs.forEach(function (input, index) {
-  input.addEventListener("keydown", function (event) {
-    if (event.code === "Backspace") {
-      if (index > 0) {
-        inputs[index - 1].focus();
-        inputs[index].value = "";
-        inputs[index-1].value = "";
-      } else if (index === 0) {
-        input.value = "";
-      }
-    }
-  });
-
-  input.addEventListener("input", function (event) {
-    let value = event.target.value;
-    if (value >= 0 && value <= 9) {
-      event.target.style.borderColor = "";
-      if (index < inputs.length - 1) {
-        inputs[index + 1].focus();
-      }
-    } else {
-      event.target.style.borderColor = "red";
-      event.target.value = "";
-    }
-
-    let allInputsFilled = true;
-    inputs.forEach(function (input) {
-      if (input.value === "") {
-        allInputsFilled = false;
-      }
-    });
-
-    if (allInputsFilled) {
-      submitButton.disabled = false;
-    } else {
+      let inputs = document.querySelectorAll("input");
+      let submitButton = document.querySelector('button[type="submit"]');
       submitButton.disabled = true;
-      submitButton.style.backgroundColor = "#0ccdf0";
-    }
-  });
-});
+      let otpa = document.querySelector("#otpa").value;
+      let otpb = document.querySelector("#otpb").value;
+      let otpc = document.querySelector("#otpc").value;
+      let otpd = document.querySelector("#otpd").value;
+
+      inputs.forEach(function (input, index) {
+        input.addEventListener("keydown", function (event) {
+          if (event.code === "Backspace") {
+            if (index > 0) {
+              inputs[index - 1].focus();
+              inputs[index].value = "";
+              inputs[index - 1].value = "";
+            } else if (index === 0) {
+              input.value = "";
+            }
+          }
+        });
+
+        input.addEventListener("input", function (event) {
+          let value = event.target.value;
+          if (value >= 0 && value <= 9) {
+            event.target.style.borderColor = "";
+            if (index < inputs.length - 1) {
+              inputs[index + 1].focus();
+            }
+          } else {
+            event.target.style.borderColor = "red";
+            event.target.value = "";
+          }
+
+          let allInputsFilled = true;
+          inputs.forEach(function (input) {
+            if (input.value === "") {
+              allInputsFilled = false;
+            }
+          });
+
+          if (allInputsFilled) {
+            submitButton.disabled = false;
+          } else {
+            submitButton.disabled = true;
+            submitButton.style.backgroundColor = "#0ccdf0";
+          }
+        });
+      });
     </script>
   </body>
 </html>

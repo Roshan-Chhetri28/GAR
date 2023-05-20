@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>confirm</title>
-</head>
-<body>
-    <div class="cp-thulio">
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="confirmpass.css" />
+    <title>Confirm Password</title>
+  </head>
+  <body>
+    <div class="cp-body">
+      <div class="cp-main">
+        <div class="cp-blue">
+          <p>confirm</p>
+          <p>Password</p>
+        </div>
+        <div class="cp-forms">
+          <form action="./index.html">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+            <input
+              type="password"
+              name="repass"
+              id="repass"
+              placeholder="password"
+            />
+            </div>
+            <button type="submit" id="cp-btn" >Submit</button>
+          </form>
+          <div class="form-links">
+            <!-- <p>Go to</p> -->
+            <a href="./login.html">Log in here</a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
