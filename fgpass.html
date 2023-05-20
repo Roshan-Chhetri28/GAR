@@ -31,50 +31,50 @@
       </div>
     </div>
     <script>
-      let inputs = document.querySelectorAll("input");
-      let currentInputIndex = 0;
-      let submitButton = document.querySelector('button[type="submit"]');
+ let inputs = document.querySelectorAll("input");
+let submitButton = document.querySelector('button[type="submit"]');
+submitButton.disabled = true;
 
-      document.addEventListener("keydown", function (event) {
-        if (event.code === "Backspace") {
-          if (currentInputIndex > 0) {
-            currentInputIndex--;
-            inputs[currentInputIndex--].focus();
-            event.target.style.borderColor = "";
-          }
-        }
-      });
+inputs.forEach(function (input, index) {
+  input.addEventListener("keydown", function (event) {
+    if (event.code === "Backspace") {
+      if (index > 0) {
+        inputs[index - 1].focus();
+        inputs[index].value = "";
+        inputs[index-1].value = "";
+      } else if (index === 0) {
+        input.value = "";
+      }
+    }
+  });
 
-      inputs.forEach(function (input, index) {
-        input.addEventListener("input", function (event) {
-          let value = event.target.value;
-          if (value >= 0 && value <= 9) {
-            if (index < inputs.length - 1) {
-              currentInputIndex++;
-              inputs[currentInputIndex].focus();
-            }
-          } else {
-            event.target.style.borderColor = "red";
-            currentInputIndex++;
-            inputs[currentInputIndex].focus();
-          }
+  input.addEventListener("input", function (event) {
+    let value = event.target.value;
+    if (value >= 0 && value <= 9) {
+      event.target.style.borderColor = "";
+      if (index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
+    } else {
+      event.target.style.borderColor = "red";
+      event.target.value = "";
+    }
 
-          let allInputsFilled = true;
-          inputs.forEach(function (input) {
-            if (input.value !== "") {
-              allInputsFilled = false;
-            }
-          });
+    let allInputsFilled = true;
+    inputs.forEach(function (input) {
+      if (input.value === "") {
+        allInputsFilled = false;
+      }
+    });
 
-          if (allInputsFilled) {
-            submitButton.disabled = true;
-            submitButton.style.backgroundColor = "#0ccdf";
-          } 
-          else {
-            submitButton.disabled = false;
-          }
-        });
-      });
+    if (allInputsFilled) {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+      submitButton.style.backgroundColor = "#0ccdf0";
+    }
+  });
+});
     </script>
   </body>
 </html>
