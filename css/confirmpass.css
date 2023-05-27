@@ -30,7 +30,7 @@
     justify-content: center;
     font-family:'Lucida Sans Unicode', monospace, sans-serif;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2vw;
     align-items:center ;
     border-bottom-right-radius: 72%;
     border-top-right-radius: 10px;
@@ -59,10 +59,12 @@
     text-transform: capitalize;
     border-radius: 20px;
     margin-top: 3vh;
-    height: 4vw;
-    padding-left: 2.6rem;
+    height: 7vh;
+    padding-left: 3vw;
     border-color: #0cc0df;
     background-color: whitesmoke;
+    font-size: 1.2vw;
+    /* letter-spacing: 0.7vw; */
 } 
 #cp-terms{
     height: 2vh;
@@ -85,7 +87,7 @@
     color: white;
     height: 7vh;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     border: none;
 }
 .cp-btn:hover{

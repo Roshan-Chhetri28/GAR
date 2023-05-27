@@ -230,7 +230,7 @@ nav {
 .sec-about {
   place-self: flex-start;
   font-size: 2vw;
-  color: var(--pricol);
+  color: let(--pricol);
 }
 .sec-h1 {
   font-size: 2vw;
@@ -277,7 +277,7 @@ hr {
 }
 .serv #blue-text {
   font-size: 3rem;
-  color: var(--pricol);
+  color: let(--pricol);
 }
 .serv #bold-text {
   font-size: 4.4rem;
@@ -302,7 +302,7 @@ hr {
 }
 .cards .card-ok {
   background-color: #e2e2e2;
-  border-top: 12px solid var(--pricol);
+  border-top: 12px solid let(--pricol);
   width: 25vw;
   height: 25rem;
   display: flex;
@@ -348,14 +348,14 @@ hr {
   place-items: center;
 }
 .four-rental {
-  color: var(--pricol);
+  color: let(--pricol);
   font-size: 2rem;
 }
 .four-recom {
   font-size: 1rem;
 }
 .four-list {
-  border-bottom: 3px solid var(--shadow);
+  border-bottom: 3px solid let(--shadow);
 }
 .four-list ul {
   display: grid;
@@ -386,7 +386,7 @@ hr {
 }
 
 .f-text-area span {
-  color: var(--pricol);
+  color: let(--pricol);
 }
 
 .f-list {
@@ -469,7 +469,7 @@ hr {
 /* .f-card-btn {} */
 
 .f-card-btn button {
-  background-color: var(--pricol);
+  background-color: let(--pricol);
   border: none;
   outline: none;
   width: 7rem;

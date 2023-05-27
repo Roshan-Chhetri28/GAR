@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="confirmpass.css" />
+    <link rel="stylesheet" href="./css/confirmpass.css" />
     <title>Confirm Password</title>
   </head>
+
   <body>
     <div class="cp-body">
       <div class="cp-main">
@@ -15,28 +16,30 @@
           <p>Password</p>
         </div>
         <div class="cp-forms">
-          <form action="./index.html">
+          <form action="./index.html" method="post">
             <input
               type="password"
               name="password"
               id="password"
-              placeholder="password"
+              placeholder="password" required
             />
             <input
               type="password"
               name="repass"
               id="repass"
-              placeholder="password"
+              placeholder="password" required
             />
-            </div>
-            <button type="submit" id="cp-btn" >Submit</button>
+            <button type="submit" id="cp-btn" value="" onclick="check()" >
+              Submit
+            </button>
           </form>
+          <p id="error"></p>
           <div class="form-links">
-            <!-- <p>Go to</p> -->
             <a href="./login.html">Log in here</a>
           </div>
         </div>
       </div>
     </div>
+    <script src="./js/confirmpass.js"></script>
   </body>
 </html>
